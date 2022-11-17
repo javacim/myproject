@@ -3,6 +3,7 @@ package com.example.jpa.view;
 
 import com.example.jpa.model.User;
 import com.example.jpa.service.UserService;
+import com.example.jpa.service.UserServiceImpl;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;
@@ -40,6 +41,7 @@ public class MainView extends VerticalLayout {
         this.service = service;
         table.setColumns("id", "firstname", "lastname", "email", "dateOfBirth");
         table.setItems(service.getUsers());
+        System.out.println("");
 
 
 

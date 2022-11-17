@@ -9,11 +9,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class UserServiceTest {
     @Autowired
-    UserService service;
+    UserServiceImpl service;
 
     @BeforeEach
     void setUp() {
